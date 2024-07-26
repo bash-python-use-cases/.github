@@ -8,8 +8,8 @@
 
 Le script doit supporter la dernière distribution RedHat-like stable sur deux serveurs distants joignables en SSH :
 
-- [ ] Un serveur Linux frontal qui héberge l'application en HTTPS ([Let's Enc](https://letsencrypt.org/), [https://nip.io/](https://nip.io/), [https://traefik.me/](https://traefik.me/), etc.)
-- [ ] Un serveur Linux de Backend qui héberge la base de données
+- [ ] Un serveur Linux frontal qui héberge l'application en HTTPS ([Let's Enc](https://letsencrypt.org/), [https://nip.io/](https://nip.io/), [https://traefik.me/](https://traefik.me/), etc.).
+- [ ] Un serveur Linux de Backend qui héberge la base de données.
 
 Le pare-feu local de chaque serveur doit être strictement configuré :
 
@@ -23,16 +23,16 @@ L'administration courante du serveur, l'ajout d'élément d'infrastucture, de s�
 
 ## Consignes / fonctionnalité
 
-- [ ] abstraire un maximum les paramètres (nom de domaines, langue à installer, versions, etc.)
-- [ ] abstraire au maximum la logique (fonctions, modèle de données, etc.)
-- [ ] implémenter la gestion des erreurs et le logging
-- [ ] implémenter un menu interactif qui permet d'interroger les serveurs sur leur statut
-- [ ] le code devrait être exécuté à la demande en fournissant une source de données et/ou des paramètres en ligne de commande
-- [ ] le client reçoit un url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Worpress
-- [ ] la configuration doit être sécurisée selon les bonnes pratiques (mysql_secure, moindre privilèges, secrets forts, chiffrement asymétriques, et pourquoi pas audit OWASP/OSCAP automatisé, etc.)
-- [ ] optionnellement, vous pouvez automatiser l'approvisionnement des deux hôtes qui hébergent l'application
-- [ ] le choix d'installation de plugins ou de thèmes supplémentaires peut être envisagée
-- [ ] si nécessaire, vous pouvez diviser votre script en plusieurs fichiers
+- [ ] Abstraire un maximum les paramètres (nom de domaines, langue à installer, versions, etc.).
+- [ ] Abstraire au maximum la logique (fonctions, modèle de données, etc.).
+- [ ] Implémenter la gestion des erreurs et le logging.
+- [ ] Implémenter un menu interactif qui permet d'interroger les serveurs sur leur statut.
+- [ ] Le code devrait être exécuté à la demande en fournissant une source de données et/ou des paramètres en ligne de commande.
+- [ ] Le client final reçoit un url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Wordpress.
+- [ ] La configuration doit être sécurisée selon les bonnes pratiques (mysql_secure, moindre privilèges, secrets forts, chiffrement asymétriques, et pourquoi pas audit OWASP/OSCAP automatisé, etc.).
+- [ ] Optionnellement, vous pouvez automatiser l'approvisionnement des deux hôtes qui hébergent l'application.
+- [ ] Le choix d'installation de plugins ou de thèmes supplémentaires peut être envisagée.
+- [ ] Si nécessaire, vous pouvez diviser votre script en plusieurs fichiers.
 
 ## Livraison
 
@@ -41,15 +41,12 @@ L'administration courante du serveur, l'ajout d'élément d'infrastucture, de s�
 - [ ] Toujours collaboratif.
 - [ ] Seul par défaut.
 - [ ] En équipe de deux, chacun s'occupant d'un serveur et collaborant pour fournir une solution unifiée.
-- [ ] En équipe de plus de deux si vous organisez votre travail à l'aide d'un tableau [Github Projects](https://docs.github.com/fr/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects). Chacun doit montrer ses contributions par ses commits.
+- [ ] En équipe de plus de deux si vous organisez votre travail à l'aide d'un tableau [Github Projects](https://docs.github.com/fr/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects).
+- [ ] Chacun doit montrer ses contributions personnelles par ses commits.
 
 ## Intelligence artificielle et citation des sources
 
-Veuillez mentionner que votre code est original quand vous n'avez pas utilisé l'IA. 
-
-Si vous avez utilisé l'IA, veuillez le mentionner également.
-
-Il s'agit d'un choix que vous devriez faire dès que vous commencez votre projet.
+Veuillez mentionner que votre code est original quand vous n'avez pas utilisé l'IA. Si vous avez utilisé l'IA, veuillez le mentionner également. Il s'agit d'un choix que vous devriez faire dès que vous commencez votre projet.
 
 Prenez garde de ne pas vous laisser distraire par l'IA. D'ailleurs, on est souvent seul face à l'IA. Le bon usage de l'IA exige non seulement déjà une bonne connaissance du sujet mais aussi des compétences nouvelles et spécifiques.
 
@@ -59,7 +56,7 @@ Enfin, merci de citer vos sources d'inspiration.
 
 ## Validation
 
-Une seule commande qui déploie automatiquement une application Wordpress prête à l'emploi : le client (l'animateur de la formation) reçoit un message avec url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Worpress en HTTPS. Celui-ci arrive directement dans le Dashboard de l'application.
+Une seule commande qui déploie automatiquement une application Wordpress prête à l'emploi : le client (l'animateur de la formation) reçoit un message avec url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Wordpress en HTTPS. Celui-ci arrive directement dans le Dashboard d'administration de l'application.
 
 ## Améliorations et alternatives
 
