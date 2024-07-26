@@ -47,7 +47,7 @@ Si vous avez utilisé l'IA, veuillez le mentionner également.
 
 Il s'agit d'un choix que vous devriez faire dès que vous commencez votre projet.
 
-Prenez garde de ne pas vous laisser distraire par l'IA. D'ailleurs, on est souvent seul face à l'IA.
+Prenez garde de ne pas vous laisser distraire par l'IA. D'ailleurs, on est souvent seul face à l'IA. Le bon usage de l'IA exige non seulement déjà une bonne connaissance du sujet mais aussi des compétences nouvelles et spécifiques.
 
 Dans tous les cas, veuillez faire confiance à votre propre intelligence et à celle de vos propres collaborateurs. Cela en vaut la peine.
 
