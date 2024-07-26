@@ -45,6 +45,12 @@ Veuillez mentionner que votre code est original quand vous n'avez pas utilisé l
 
 Si vous avez utilisé l'IA, veuillez le mentionner également.
 
+Il s'agit d'un choix que vous devriez faire dès que vous commencez votre projet.
+
+Prenez garde de ne pas vous laisser distraire par l'IA. D'ailleurs, on est souvent seul face à l'IA.
+
+Dans tous les cas, veuillez faire confiance à votre propre intelligence et à celle de vos propres collaborateurs. Cela en vaut la peine.
+
 ## Validation
 
 Une seule commande qui déploie automatiquement une application Wordpress prête à l'emploi : le client (l'animateur de la formation) reçoit un message avec url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Worpress. Celui-ci arrive directement dans le Dashboard de l'application.
