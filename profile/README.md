@@ -43,7 +43,7 @@ L'administration courante du serveur, l'ajout d'élément d'infrastucture, de s�
 - [ ] En équipe de deux, chacun s'occupant d'un serveur et collaborant pour fournir une solution unifiée.
 - [ ] En équipe de plus de deux si vous organisez votre travail à l'aide d'un tableau [Github Projects](https://docs.github.com/fr/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects). Chacun doit montrer ses contributions par ses commits.
 
-## Intelligence artificielle
+## Intelligence artificielle et citation des sources
 
 Veuillez mentionner que votre code est original quand vous n'avez pas utilisé l'IA. 
 
@@ -54,6 +54,8 @@ Il s'agit d'un choix que vous devriez faire dès que vous commencez votre projet
 Prenez garde de ne pas vous laisser distraire par l'IA. D'ailleurs, on est souvent seul face à l'IA. Le bon usage de l'IA exige non seulement déjà une bonne connaissance du sujet mais aussi des compétences nouvelles et spécifiques.
 
 Dans tous les cas, veuillez faire confiance à votre propre intelligence et à celle de vos propres collaborateurs. Cela en vaut la peine.
+
+Enfin, merci de citer vos sources d'inspiration.
 
 ## Validation
 
