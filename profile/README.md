@@ -29,9 +29,11 @@ Une architecture constituée de plusieurs serveurs de DB avec un gestionnaire de
 ## Livraison
 
 - Code régulièrement mis à jour sur un repository [https://github.com/bash-python-use-cases](https://github.com/bash-python-use-cases) au plus tard à la fin du module.
+- README.md explique l'usage du script et sa démonstration fonctionnelle.
 - Toujours collaboratif.
 - Seul par défaut.
-- En groupe si vous organisez votre travail à l'aide d'un tableau [Github Projects](https://docs.github.com/fr/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects).
+- En équipe de deux, chacun s'occupant d'un serveur et collaborant pour fournir une solution unifiée.
+- En équipe de plus de deux si vous organisez votre travail à l'aide d'un tableau [Github Projects](https://docs.github.com/fr/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects). Chacun doit montrer ses contributions par ses commits.
 
 ## Intelligence artificielle
 
