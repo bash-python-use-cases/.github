@@ -24,7 +24,7 @@ Le pare-feu local de chaque serveur doit être strictement configuré.
 
 ## Livraison
 
-- code régulièrement mis à jour sur un repository https://github.com/wordpress-automation au plus tard à la fin du module.
+- code régulièrement mis à jour sur un repository [https://github.com/bash-python-use-cases](https://github.com/bash-python-use-cases) au plus tard à la fin du module.
 
 ## Intelligence artificielle
 
