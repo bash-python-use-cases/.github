@@ -21,7 +21,7 @@ Une architecture constituée de plusieurs serveurs de DB avec un gestionnaire de
 
 L'administration courante du serveur, l'ajout d'élément d'infrastucture, de sécurité ou de surveillance (WAF/IDS/APM/SIEM/AV) ne fait pas partie de l'énoncé.
 
-## Consignes / fonctionnalité
+## Consignes et fonctionnalités attendues
 
 - [ ] Abstraire un maximum les paramètres (nom de domaines, langue à installer, versions, etc.).
 - [ ] Abstraire au maximum la logique (fonctions, modèle de données, etc.).
