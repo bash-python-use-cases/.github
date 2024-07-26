@@ -55,6 +55,17 @@ Dans tous les cas, veuillez faire confiance à votre propre intelligence et à c
 
 Une seule commande qui déploie automatiquement une application Wordpress prête à l'emploi : le client (l'animateur de la formation) reçoit un message avec url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Worpress. Celui-ci arrive directement dans le Dashboard de l'application.
 
+## Améliorations et alternatives
+
+Veillez les remarques ci-dessus sur l'architecture.
+
+Les alternatives de déploiement pourraient être :
+
+- Ansible playbooks
+- Terraform plans
+- DockerCompose
+- Kubernetes manifests (custom images, Helm Charts, Kustomize,...)
+
 ## Point de départ
 
 [How to Install WordPress on Linux Server: A Step by Step Guide](https://hackernoon.com/how-to-install-wordpress-on-linux-server-a-step-by-step-guide)
