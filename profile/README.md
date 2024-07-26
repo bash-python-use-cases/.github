@@ -30,6 +30,7 @@ L'administration courante du serveur, l'ajout d'élément d'infrastucture, de s�
 - [ ] Le code devrait être exécuté à la demande en fournissant une source de données et/ou des paramètres en ligne de commande.
 - [ ] Le client final reçoit un url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Wordpress.
 - [ ] La configuration doit être sécurisée selon les bonnes pratiques (mysql_secure, moindre privilèges, secrets forts, chiffrement asymétriques, et pourquoi pas audit OWASP/OSCAP automatisé, etc.).
+- [ ] Le script devrait fonctionner sur une seule machine avec les bons paramètres.
 - [ ] Optionnellement, vous pouvez automatiser l'approvisionnement des deux hôtes qui hébergent l'application.
 - [ ] Le choix d'installation de plugins ou de thèmes supplémentaires peut être envisagée.
 - [ ] Si nécessaire, vous pouvez diviser votre script en plusieurs fichiers.
@@ -60,7 +61,7 @@ Une seule commande qui déploie automatiquement une application Wordpress prête
 
 ## Améliorations et alternatives
 
-Veillez les remarques ci-dessus sur l'architecture.
+Veuillez considérer les remarques ci-dessus sur l'architecture et l'administration de l'application.
 
 Les alternatives de déploiement pourraient être :
 
