@@ -4,7 +4,7 @@
 
 [Wordpress](https://wordpress.org/download/)
 
-## Architecture
+## Architecture de l'application
 
 Le script doit supporter la dernière distribution RedHat-like stable sur deux serveurs distants joignables en SSH :
 
@@ -35,7 +35,7 @@ L'administration courante du serveur, l'ajout d'élément d'infrastucture, de s�
 - [ ] Le choix d'installation de plugins ou de thèmes supplémentaires peut être envisagée.
 - [ ] Si nécessaire, vous pouvez diviser votre script en plusieurs fichiers.
 
-## Livraison
+## Livraison du code source
 
 - [ ] Code régulièrement mis à jour sur un repository [https://github.com/bash-python-use-cases](https://github.com/bash-python-use-cases) au plus tard à la fin du module.
 - [ ] README.md explique l'usage du script et sa démonstration fonctionnelle.
@@ -55,7 +55,7 @@ Dans tous les cas, veuillez faire confiance à votre propre intelligence et à c
 
 Enfin, merci de citer vos sources d'inspiration.
 
-## Validation
+## Validation de la solution
 
 Une seule commande qui déploie automatiquement une application Wordpress prête à l'emploi : le client (l'animateur de la formation) reçoit un message avec url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Wordpress en HTTPS. Celui-ci arrive directement dans le Dashboard d'administration de l'application.
 
