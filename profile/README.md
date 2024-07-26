@@ -15,7 +15,7 @@ Le pare-feu local de chaque serveur doit être strictement configuré.
 
 Une architecture constituée de plusieurs serveurs de DB avec un gestionnaire de cache et un _load balancer_ devant plusieurs serveurs Web n'est pas envisagée dans cette étude de cas.
 
-L'Administration courante du serveur, l'ajout d'élément d'infrastucture, de sécurité ou de surveillance (WAF/IDS/APM/SIEM/AV) ne fait pas partie de l'énoncé.
+L'administration courante du serveur, l'ajout d'élément d'infrastucture, de sécurité ou de surveillance (WAF/IDS/APM/SIEM/AV) ne fait pas partie de l'énoncé.
 
 ## Consignes / fonctionnalité
 
