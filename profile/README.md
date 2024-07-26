@@ -11,9 +11,13 @@ Le script doit supporter la dernière distribution RedHat-like stable sur deux s
 - Un serveur Linux frontal qui héberge l'application en HTTPS ([Let's Enc](https://letsencrypt.org/), [https://nip.io/](https://nip.io/), [https://traefik.me/](https://traefik.me/), etc.)
 - Un serveur Linux de Backend qui héberge la base de données
 
-Le pare-feu local de chaque serveur doit être strictement configuré.
+Le pare-feu local de chaque serveur doit être strictement configuré :
 
-Une architecture constituée de plusieurs serveurs de DB avec un gestionnaire de cache et un _load balancer_ devant plusieurs serveurs Web n'est pas envisagée dans cette étude de cas.
+- Le serveur frontal doit être accessible en HTTPS uniquement.
+- Le serveur de DB doit être uniquement acessible du serveur frontal.
+- Pour des raisons d'infrastructure, on ouvrira aussi les ports de gestion et de d'infrastructure comme SSH ou DNS.
+
+Une architecture constituée de plusieurs serveurs de DB avec un gestionnaire de cache et un _load balancer_ devant plusieurs serveurs Web n'est pas envisagée dans cette étude de cas. Dans ce cas, c'est le load balancer frontal qui s'occupe du chiffrement et du routage public.
 
 L'administration courante du serveur, l'ajout d'élément d'infrastucture, de sécurité ou de surveillance (WAF/IDS/APM/SIEM/AV) ne fait pas partie de l'énoncé.
 
