@@ -14,7 +14,7 @@ Le script doit supporter la dernière distribution RedHat-like stable sur deux s
 Le pare-feu local de chaque serveur doit être strictement configuré :
 
 - [ ] Le serveur frontal doit être accessible en HTTPS uniquement.
-- [ ] Le serveur de DB doit être uniquement acessible du serveur frontal.
+- [ ] Le serveur de DB doit être uniquement accessible du serveur frontal.
 - [ ] Pour des raisons d'infrastructure, on ouvrira aussi les ports de gestion et de d'infrastructure comme SSH ou DNS.
 
 Une architecture constituée de plusieurs serveurs de DB avec un gestionnaire de cache et un _load balancer_ devant plusieurs serveurs Web n'est pas envisagée dans cette étude de cas. Dans ce cas, c'est le load balancer frontal qui s'occupe du chiffrement et du routage public.
