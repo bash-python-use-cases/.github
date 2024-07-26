@@ -6,10 +6,10 @@ Wordpress
 
 ## Architecture
 
-Le script doit supporter la dernière distribution RedHat-like stable sur deux serveurs distants joignable en SSH :
+Le script doit supporter la dernière distribution RedHat-like stable sur deux serveurs distants joignables en SSH :
 
 - Un serveur Linux frontal qui héberge l'application
-- Un serveur Linux  de Backend qui héberge la base de données
+- Un serveur Linux de Backend qui héberge la base de données
 
 Le pare-feu local de chaque serveur doit être strictement configuré.
 
@@ -19,7 +19,8 @@ Le pare-feu local de chaque serveur doit être strictement configuré.
 - abstraire au maximum la logique (fonctions, modèle de données, etc.)
 - implémenter la gestion des erreurs et logging
 - implémenter un menu interactif qui permet d'interroger le serveur sur sont statut
-- le code devrait être exécuté à la demande en fournissant une source de données et/ou des paramètres en ligne de commande.
+- le code devrait être exécuté à la demande en fournissant une source de données et/ou des paramètres en ligne de commande
+- optionnellement, vous pouvez automatiser l'approvissionnement des deux hôtes
 
 ## Livraison
 
