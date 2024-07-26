@@ -70,6 +70,13 @@ Les alternatives de déploiement pourraient être :
 - DockerCompose
 - Kubernetes manifests (custom images, Helm Charts, Kustomize,...)
 
+## Compétences et matériel nécessaire
+
+- Une ou deux instances linux à "spawner" locale ou dans le cloud.
+- Les rudiments de l'administration système Linux.
+- Les rudiments du scripting Bash et Python.
+- Les rudiments git/github et vi.
+
 ## Point de départ
 
 [How to Install WordPress on Linux Server: A Step by Step Guide](https://hackernoon.com/how-to-install-wordpress-on-linux-server-a-step-by-step-guide)
