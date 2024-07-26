@@ -15,6 +15,8 @@ Le pare-feu local de chaque serveur doit être strictement configuré.
 
 Une architecture constituée de plusieurs serveurs de DB avec un gestionnaire de cache et un _load balancer_ devant plusieurs serveurs Web n'est pas envisagée dans cette étude de cas.
 
+L'Administration courante du serveur, l'ajout d'élément d'infrastucture, de sécurité ou de surveillance (WAF/IDS/APM/SIEM/AV) ne fait pas partie de l'énoncé.
+
 ## Consignes / fonctionnalité
 
 - abstraire un maximum les paramètres (nom de domaines, langue à installer, versions, etc.)
@@ -23,7 +25,9 @@ Une architecture constituée de plusieurs serveurs de DB avec un gestionnaire de
 - implémenter un menu interactif qui permet d'interroger les serveurs sur leur statut
 - le code devrait être exécuté à la demande en fournissant une source de données et/ou des paramètres en ligne de commande
 - le client reçoit un url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Worpress
+- la configuration doit être sécurisée selon les bonnes pratiques (moindre privilèges, secrets forts, chiffrement asymétriques, et pourquoi pas audit OWASP/OSCAP automatisé, etc.)
 - optionnellement, vous pouvez automatiser l'approvisionnement des deux hôtes qui hébergent l'application
+- le choix d'installation de plugins ou de thèmes supplémentaires peut être envisagée
 - si nécessaire, vous pouvez diviser votre script en plusieurs fichiers
 
 ## Livraison
