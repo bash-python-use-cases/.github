@@ -25,7 +25,7 @@ L'Administration courante du serveur, l'ajout d'élément d'infrastucture, de s�
 - implémenter un menu interactif qui permet d'interroger les serveurs sur leur statut
 - le code devrait être exécuté à la demande en fournissant une source de données et/ou des paramètres en ligne de commande
 - le client reçoit un url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Worpress
-- la configuration doit être sécurisée selon les bonnes pratiques (moindre privilèges, secrets forts, chiffrement asymétriques, et pourquoi pas audit OWASP/OSCAP automatisé, etc.)
+- la configuration doit être sécurisée selon les bonnes pratiques (mysql_secure, moindre privilèges, secrets forts, chiffrement asymétriques, et pourquoi pas audit OWASP/OSCAP automatisé, etc.)
 - optionnellement, vous pouvez automatiser l'approvisionnement des deux hôtes qui hébergent l'application
 - le choix d'installation de plugins ou de thèmes supplémentaires peut être envisagée
 - si nécessaire, vous pouvez diviser votre script en plusieurs fichiers
