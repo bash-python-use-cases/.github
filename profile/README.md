@@ -57,7 +57,7 @@ Dans tous les cas, veuillez faire confiance à votre propre intelligence et à c
 
 ## Validation
 
-Une seule commande qui déploie automatiquement une application Wordpress prête à l'emploi : le client (l'animateur de la formation) reçoit un message avec url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Worpress. Celui-ci arrive directement dans le Dashboard de l'application.
+Une seule commande qui déploie automatiquement une application Wordpress prête à l'emploi : le client (l'animateur de la formation) reçoit un message avec url, un nom d'utilisateur et un mot de passe l'invitant à se connecter à son nouveau serveur Worpress en HTTPS. Celui-ci arrive directement dans le Dashboard de l'application.
 
 ## Améliorations et alternatives
 
