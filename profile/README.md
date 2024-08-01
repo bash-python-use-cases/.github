@@ -309,6 +309,9 @@ EOF
 # Copy virtual host configuration file to Apache's conf.d directory
 sudo cp /tmp/$DOMAIN.conf /etc/httpd/conf.d/$DOMAIN.conf
 
+# Create Apache Log File
+sudo touch /var/log/httpd/${DOMAIN}-error_log ; sudo touch /var/log/httpd/${DOMAIN}-access_log
+
 # Start and enable Apache
 sudo systemctl start httpd
 sudo systemctl enable httpd
