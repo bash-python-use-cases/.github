@@ -132,7 +132,7 @@ Environment Variables:
 
 ## Préparer la station de contrôle et les cibles
 
-Sur le contrôlleur :
+Sur le contrôleur :
 
 ```bash
 ssh-keygen -t rsa -b 4096 -f wpadmin -q -N ""
