@@ -135,7 +135,7 @@ Environment Variables:
 Sur le contrôlleur :
 
 ```bash
-ssh-keygen -t rsa -b 2048 -f wpadmin -q -N ""
+ssh-keygen -t rsa -b 4096 -f wpadmin -q -N ""
 chmod 600 wpadmin
 cat wpadmin.pub
 ```
