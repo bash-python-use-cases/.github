@@ -1,10 +1,10 @@
 # Use cases
 
-## Objectif
+## 1. Objectif
 
 L'objectif de cet exercice est d'automatiser le déploiement d'une application WordPress sur deux serveurs distants en utilisant des scripts Bash et Python. Les opérateurs devront configurer et déployer un serveur frontal pour l'application web et un serveur backend pour la base de données, en suivant les meilleures pratiques de DevOps. Les scripts doivent gérer la configuration du serveur, l'installation de logiciels nécessaires, la gestion des mots de passe et la configuration de WordPress. L'installation se réalise sur des serveurs distants déjà approvisionnés.
 
-## Contexte
+## 2. Contexte
 
 Vous devez automatiser le déploiement de WordPress sur deux serveurs distincts :
 
@@ -21,15 +21,15 @@ Vous utiliserez des scripts Bash et Python pour accomplir cette tâche. Les scri
 - Vérification de l'état des services et de l'application WordPress.
 - Réalisation d'audits de sécurité.
 
-## Exigences
+## 3. Exigences
 
-### Scripts à écrire
+### 3.1. Scripts à écrire
 
 1. **deploy_wordpress.sh** : Script Bash pour déployer WordPress.
 2. **deploy_wordpress.py** : Script Python pour déployer WordPress.
 3. **wp_cli_wrapper.sh** : Script Bash pour gérer les commandes `wp-cli`.
 
-### Fonctionnalités des scripts
+### 3.2. Fonctionnalités des scripts
 
 - **deploy_wordpress.sh** :
   - Met à jour le système et installe les paquets nécessaires.
@@ -46,7 +46,7 @@ Vous utiliserez des scripts Bash et Python pour accomplir cette tâche. Les scri
 - **wp_cli_wrapper.sh** :
   - Utilise `wp-cli` pour installer et gérer WordPress, ses thèmes et ses plugins.
 
-### Variables de configuration
+### 3.3. Variables de configuration
 
 Les scripts doivent prendre en charge les variables suivantes, définies via un fichier de configuration YAML ou des variables d'environnement :
 
@@ -66,7 +66,7 @@ Les scripts doivent prendre en charge les variables suivantes, définies via un 
 - `WEB_SERVER`: Serveur web à utiliser (Apache ou Nginx).
 - `LOGFILE`: Chemin du fichier de log.
 
-## Tâches
+## 4. Tâches
 
 1. **Écrire et tester les scripts :** Vous devez écrire les scripts décrits ci-dessus et les tester pour vous assurer qu'ils fonctionnent correctement.
 2. **Créer un fichier de configuration YAML :** Créez un fichier `config.yml` avec les variables de configuration nécessaires.
@@ -74,14 +74,14 @@ Les scripts doivent prendre en charge les variables suivantes, définies via un 
 4. **Vérifier l'état des services :** Assurez-vous que les services sont en cours d'exécution et que WordPress est accessible.
 5. **Réaliser un audit de sécurité :** Utilisez les scripts pour effectuer un audit de sécurité sur les serveurs.
 
-## Livrables
+## 5. Livrables
 
 - Les scripts `deploy_wordpress.sh`, `deploy_wordpress.py`, et `wp_cli_wrapper.sh`.
 - Un fichier `config.yml` de configuration.
 - Un fichier README.md expliquant comment utiliser les scripts.
 - Un fichier log de l'exécution des scripts.
 
-## Évaluation
+## 6. Évaluation
 
 Vous serez évalués sur :
 
@@ -91,13 +91,13 @@ Vous serez évalués sur :
 - La réussite du déploiement et de la configuration de WordPress.
 - La capacité à vérifier l'état des services et à réaliser des audits de sécurité.
 
-## Ressources
+## 7. Ressources
 
 - [Documentation WP-CLI](https://wp-cli.org/)
 - [Documentation Paramiko](http://docs.paramiko.org/en/stable/)
 - [YAML 1.2 Specification](https://yaml.org/spec/1.2/spec.html)
 
-## Fichier de configuration attendu
+## 8. Fichier de configuration attendu
 
 ```yaml
 # Configuration du serveur frontal (frontend)
@@ -132,7 +132,7 @@ web_server: "apache"
 logfile: "deploy_wordpress.log"
 ```
 
-## Menu interactif attendu
+## 9. Menu interactif attendu
 
 ```bash
 bash deploy_wordpress.sh ./config.yml help
@@ -165,7 +165,7 @@ Environment Variables:
 ```
 
 
-## Préparer la station de contrôle et les cibles
+## 10. Préparer la station de contrôle et les cibles
 
 Sur le contrôleur :
 
@@ -236,7 +236,9 @@ Pour se connecter à partir de la station de contrôle :
 ssh -i wpadmin -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null wpadmin@frontend
 ```
 
-## Installation du Backend
+## 11. Procédure manuelle
+
+### 11.1. Installation du Backend
 
 - Définition des variables de configuration
   ```bash
@@ -294,7 +296,7 @@ echo -e '\ny\n$DB_ROOT_PASSWORD\n$DB_ROOT_PASSWORD\ny\ny\ny\ny\n' | sudo mysql_s
 sudo mysql -p${DB_ROOT_PASSWORD} -e "CREATE DATABASE ${DB_NAME};CREATE USER '${DB_USER}'@'${FRONTEND_IP}' IDENTIFIED BY '${DB_PASSWORD}';CREATE USER '${DB_USER}'@'localhost' IDENTIFIED BY '${DB_PASSWORD}';GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'${FRONTEND_IP}';GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'localhost';FLUSH PRIVILEGES;"
 ```
 
-## Installation du Frontend
+### 11.2. Installation du Frontend
 
 - Définition des variables de configuration
   ```bash
@@ -362,7 +364,7 @@ sudo setsebool -P httpd_unified 1
 getsebool -a | grep -E "^httpd_(unified|can_network_connect)?(_db)?\s"
 ```
 
-## Installation de wp-cli et configuration de WordPress
+### 11.3. Installation de wp-cli et configuration de WordPress
 
 - Définition des variables de configuration
   ```bash
@@ -426,7 +428,7 @@ sudo -u apache wp theme install $WP_THEME --path=/var/www/html/
 sudo -u apache wp theme activate $WP_THEME --path=/var/www/html/
 ```
 
-## Audit
+### 11.4. Audit
 
 ```bash
 sudo yum install -y openscap-scanner scap-security-guide
@@ -434,9 +436,9 @@ sudo oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_anssi_bp28_
 sudo cat /tmp/results.xml
 ```
 
-## Analyse du script `deploy_wordpress.sh`
+## 12. Analyse du script `deploy_wordpress.sh`
 
-Ce script Bash permetra de déployer une application WordPress sur deux serveurs distants : un serveur frontend pour héberger l'application web et un serveur backend pour la base de données. Il offre également des fonctionnalités de gestion et de vérification de l'état des serveurs et de l'application. Voici une description détaillée de ses fonctionnalités :
+Le script Bash permetra de déployer une application WordPress sur deux serveurs distants : un serveur frontend pour héberger l'application web et un serveur backend pour la base de données. Il offre également des fonctionnalités de gestion et de vérification de l'état des serveurs et de l'application. Voici une description détaillée de ses fonctionnalités :
 
 ### 1. Définition des variables de configuration par défaut
 
