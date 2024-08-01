@@ -260,7 +260,6 @@ sudo systemctl enable firewalld
 # Configure firewall rules
 sudo firewall-cmd --permanent --add-service=https
 sudo firewall-cmd --permanent --add-service=http
-sudo firewall-cmd --permanent --add-service=dns
 sudo firewall-cmd --permanent --add-service=ssh
 sudo firewall-cmd --reload
 
