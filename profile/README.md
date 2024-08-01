@@ -97,6 +97,39 @@ Vous serez évalués sur :
 - [Documentation Paramiko](http://docs.paramiko.org/en/stable/)
 - [YAML 1.2 Specification](https://yaml.org/spec/1.2/spec.html)
 
+## Menu interactif attendu
+
+```bash
+bash deploy_wordpress.sh ./config.yml help
+Usage: deploy_wordpress.sh [config_file] [option]
+Options:
+  deploy                   Deploy WordPress application
+  status                   Check status of frontend, backend server and Worpress
+  audit                    Perform security audit
+  wp                       Use wp-cli wrapper for WordPress management
+  load                     Load a different configuration file
+  help                     Display this help message
+  quit                     Exit the script
+
+Environment Variables:
+  FRONTEND_IP              (required) IP address of the frontend server
+  BACKEND_IP               (required) IP address of the backend server
+  DOMAIN                   (required) Domain name for the WordPress site
+  DB_NAME                  (default: wordpress) Name of the WordPress database
+  DB_USER                  (default: wp_user) Database user for WordPress
+  DB_PASSWORD              (generated if not set) Database user password
+  DB_ROOT_PASSWORD         (generated if not set) Database root password
+  WP_ADMIN_USER            (default: admin) WordPress admin username
+  WP_ADMIN_PASSWORD        (generated if not set) WordPress admin password
+  WP_ADMIN_EMAIL           (default: admin@example.com) WordPress admin email
+  WP_THEME                 (default: twentynineteen) WordPress theme
+  WP_LANGUAGE              (default: fr_FR) WordPress language
+  SSH_KEY_PATH             (default: ~/.ssh/id_rsa) SSH private key path
+  WEB_SERVER               (default: apache) Web server (apache or nginx)
+  LOGFILE                  (default: deploy_wordpress.log) Log file path
+```
+
+
 ## Préparer la station de contrôle et les cibles
 
 Sur le contrôlleur :
