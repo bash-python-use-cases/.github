@@ -1,24 +1,25 @@
 # Use cases
 
-- 1. Objectif
-- 2. Contexte
-- 3. Exigences
+
+1. Objectif
+2. Contexte
+3. Exigences
   - 3.1. Scripts à écrire
   - 3.2. Fonctionnalités des scripts
   - 3.3. Variables de configuration
-- 4. Tâches
-- 5. Livrables
-- 6. Évaluation
-- 7. Ressources
-- 8. Fichier de configuration attendu
-- 9. Menu interactif attendu
-- 10. Préparer la station de contrôle et les cibles
-- 11. Procédure manuelle
+4. Tâches
+5. Livrables
+6. Évaluation
+7. Ressources
+8. Fichier de configuration attendu
+9. Menu interactif attendu
+10. Préparer la station de contrôle et les cibles
+11. Procédure manuelle
   - 11.1. Installation du Backend
   - 11.2. Installation du Frontend
   - 11.3. Installation de wp-cli et configuration de WordPress
   - 11.4. Audit
-- 12. Analyse du script `deploy_wordpress.sh`
+12. Analyse du script `deploy_wordpress.sh`
   - 12.1. Définition des variables de configuration par défaut
   - 12.2. Génération de mots de passe forts
   - 12.3. Parsing du fichier YAML et configuration des variables d'environnement
