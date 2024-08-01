@@ -1,5 +1,35 @@
 # Use cases
 
+- 1. Objectif
+- 2. Contexte
+- 3. Exigences
+  - 3.1. Scripts à écrire
+  - 3.2. Fonctionnalités des scripts
+  - 3.3. Variables de configuration
+- 4. Tâches
+- 5. Livrables
+- 6. Évaluation
+- 7. Ressources
+- 8. Fichier de configuration attendu
+- 9. Menu interactif attendu
+- 10. Préparer la station de contrôle et les cibles
+- 11. Procédure manuelle
+  - 11.1. Installation du Backend
+  - 11.2. Installation du Frontend
+  - 11.3. Installation de wp-cli et configuration de WordPress
+  - 11.4. Audit
+- 12. Analyse du script `deploy_wordpress.sh`
+  - 12.1. Définition des variables de configuration par défaut
+  - 12.2. Génération de mots de passe forts
+  - 12.3. Parsing du fichier YAML et configuration des variables d'environnement
+  - 12.4. Chargement des variables d'environnement
+  - 12.5. Fonctions utilitaires
+  - 12.6. Déploiement du serveur backend
+  - 12.7. Déploiement du serveur frontend
+  - 12.8. Audit de sécurité
+  - 12.9. Affichage de l'aide et du menu interactif
+  - 12.10. Fonction principale
+
 ## 1. Objectif
 
 L'objectif de cet exercice est d'automatiser le déploiement d'une application WordPress sur deux serveurs distants en utilisant des scripts Bash et Python. Les opérateurs devront configurer et déployer un serveur frontal pour l'application web et un serveur backend pour la base de données, en suivant les meilleures pratiques de DevOps. Les scripts doivent gérer la configuration du serveur, l'installation de logiciels nécessaires, la gestion des mots de passe et la configuration de WordPress. L'installation se réalise sur des serveurs distants déjà approvisionnés.
@@ -440,47 +470,47 @@ sudo cat /tmp/results.xml
 
 Le script Bash permetra de déployer une application WordPress sur deux serveurs distants : un serveur frontend pour héberger l'application web et un serveur backend pour la base de données. Il offre également des fonctionnalités de gestion et de vérification de l'état des serveurs et de l'application. Voici une description détaillée de ses fonctionnalités :
 
-### 1. Définition des variables de configuration par défaut
+### 12.1. Définition des variables de configuration par défaut
 
 - Le script commence par définir une variable `CONFIG_FILE` pour le fichier de configuration YAML à utiliser, en prenant comme valeur par défaut `config.yml`.
 
-### 2. Génération de mots de passe forts
+### 12.2. Génération de mots de passe forts
 
 - La fonction `generate_password` utilise OpenSSL pour générer des mots de passe aléatoires et sécurisés.
 
-### 3. Parsing du fichier YAML et configuration des variables d'environnement
+### 12.3. Parsing du fichier YAML et configuration des variables d'environnement
 
 - La fonction `parse_yaml` utilise Python pour lire le fichier YAML et exporter les variables d'environnement.
 - La fonction `load_config` charge les configurations à partir du fichier YAML en utilisant `parse_yaml` ou en utilisant les variables d'environnement uniquement si le fichier YAML n'est pas trouvé.
 
-### 4. Chargement des variables d'environnement
+### 12.4. Chargement des variables d'environnement
 
 - La fonction `load_env_vars` charge les variables d'environnement et définit des valeurs par défaut pour celles qui ne sont pas spécifiées.
 
-### 5. Fonctions utilitaires
+### 12.5. Fonctions utilitaires
 
 - `log`: Journalise les messages avec un horodatage.
 - `ssh_execute_command`: Exécute des commandes SSH sur un serveur distant.
 - `check_services_status`: Vérifie l'état des services sur un serveur.
 - `check_wordpress_status`: Vérifie l'état de l'application WordPress en envoyant une requête HTTP.
 
-### 6. Déploiement du serveur backend
+### 12.6. Déploiement du serveur backend
 
 - La fonction `setup_backend` installe et configure MariaDB et Firewalld sur le serveur backend. Elle crée également la base de données et les utilisateurs nécessaires pour WordPress.
 
-### 7. Déploiement du serveur frontend
+### 12.7. Déploiement du serveur frontend
 
 - La fonction `setup_frontend` installe et configure le serveur web (Apache ou Nginx), PHP, et d'autres dépendances. Elle configure également SSL avec Certbot et configure WordPress à l'aide de WP-CLI.
 
-### 8. Audit de sécurité
+### 12.8. Audit de sécurité
 
 - La fonction `perform_audit` exécute un audit de sécurité OWASP/OSCAP sur les serveurs.
 
-### 9. Affichage de l'aide et du menu interactif
+### 12.9. Affichage de l'aide et du menu interactif
 
 - `display_help`: Affiche un message d'aide avec les options disponibles.
 - `display_menu`: Affiche un menu interactif pour que l'utilisateur puisse choisir une action.
 
-## 10. Fonction principale
+### 12.10. Fonction principale
 
 - `main`: Gère les différentes options du script (déploiement, vérification de l'état, audit, gestion avec WP-CLI, chargement d'un fichier de configuration, affichage de l'aide).
