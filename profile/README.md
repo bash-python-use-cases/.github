@@ -259,7 +259,7 @@ echo -e '\ny\n$DB_ROOT_PASSWORD\n$DB_ROOT_PASSWORD\ny\ny\ny\ny\n' | sudo mysql_s
 sudo mysql -p${DB_ROOT_PASSWORD} -e "CREATE DATABASE ${DB_NAME};CREATE USER '${DB_USER}'@'${FRONTEND_IP}' IDENTIFIED BY '${DB_PASSWORD}';CREATE USER '${DB_USER}'@'localhost' IDENTIFIED BY '${DB_PASSWORD}';GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'${FRONTEND_IP}';GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'localhost';FLUSH PRIVILEGES;"
 ```
 
-## Installation du frontend
+## Installation du Frontend
 
 - Définition des variables de configuration
   ```bash
