@@ -344,7 +344,7 @@ sudo mysql -p${DB_ROOT_PASSWORD} -e "CREATE DATABASE ${DB_NAME};CREATE USER '${D
 - Configuration des politiques SELinux pour Apache
 
 ```bash
-# This script installs and configures Apache web server with PHP support, sets up a virtual host, and obtains an SSL certificate using Let's Encrypt.
+# This script installs and configures Apache web server with PHP support, sets up a virtual host, and obtains an TLS certificate using Let's Encrypt.
 
 FRONTEND_IP="51.158.120.145"  # The IP address of the frontend server.
 DOMAIN="apache.${FRONTEND_IP}.nip.io"  # The domain name for the virtual host.
@@ -384,7 +384,7 @@ sudo touch /var/log/httpd/${DOMAIN}-error_log ; sudo touch /var/log/httpd/${DOMA
 sudo systemctl start httpd
 sudo systemctl enable httpd
 
-# Obtain SSL certificate using Let's Encrypt
+# Obtain TLS certificate using Let's Encrypt
 sudo certbot --apache -d $DOMAIN --non-interactive --agree-tos --email $WP_ADMIN_EMAIL
 
 # Configure SELinux boolean values for Apache
@@ -501,7 +501,7 @@ Le script Bash permetra de déployer une application WordPress sur deux serveurs
 
 ### 12.7. Déploiement du serveur frontend
 
-- La fonction `setup_frontend` installe et configure le serveur web (Apache ou Nginx), PHP, et d'autres dépendances. Elle configure également SSL avec Certbot et configure WordPress à l'aide de WP-CLI.
+- La fonction `setup_frontend` installe et configure le serveur web (Apache ou Nginx), PHP, et d'autres dépendances. Elle configure également TLS avec Certbot et configure WordPress à l'aide de WP-CLI.
 
 ### 12.8. Audit de sécurité
 
