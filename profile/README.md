@@ -490,9 +490,9 @@ Le script Bash permetra de déployer une application WordPress sur deux serveurs
 
 ### 12.5. Fonctions utilitaires
 
-- `log`: Journalise les messages avec un horodatage.
-- `ssh_execute_command`: Exécute des commandes SSH sur un serveur distant.
-- `check_services_status`: Vérifie l'état des services sur un serveur.
+- [x] `log`: Journalise les messages avec un horodatage.
+- [x] `ssh_execute_command`: Exécute des commandes SSH sur un serveur distant.
+- [x] `check_services_status`: Vérifie l'état des services sur un serveur.
 - `check_wordpress_status`: Vérifie l'état de l'application WordPress en envoyant une requête HTTP.
 
 ### 12.6. Déploiement du serveur backend
