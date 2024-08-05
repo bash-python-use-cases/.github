@@ -473,7 +473,7 @@ Le script Bash permetra de déployer une application WordPress sur deux serveurs
 
 ### 12.1. Définition des variables de configuration par défaut
 
-- Le script commence par définir une variable `CONFIG_FILE` pour le fichier de configuration YAML à utiliser, en prenant comme valeur par défaut `config.yml`.
+- [x] Le script commence par définir une variable `CONFIG_FILE` pour le fichier de configuration YAML à utiliser, en prenant comme valeur par défaut `config.yml`.
 
 ### 12.2. Génération de mots de passe forts
 
@@ -481,8 +481,8 @@ Le script Bash permetra de déployer une application WordPress sur deux serveurs
 
 ### 12.3. Parsing du fichier YAML et configuration des variables d'environnement
 
-- La fonction `parse_yaml` utilise Python pour lire le fichier YAML et exporter les variables d'environnement.
-- La fonction `load_config` charge les configurations à partir du fichier YAML en utilisant `parse_yaml` ou en utilisant les variables d'environnement uniquement si le fichier YAML n'est pas trouvé.
+- [x] La fonction `parse_yaml` utilise Python pour lire le fichier YAML et exporter les variables d'environnement.
+- [x] La fonction `load_config` charge les configurations à partir du fichier YAML en utilisant `parse_yaml` ou en utilisant les variables d'environnement uniquement si le fichier YAML n'est pas trouvé.
 
 ### 12.4. Chargement des variables d'environnement
 
@@ -497,11 +497,11 @@ Le script Bash permetra de déployer une application WordPress sur deux serveurs
 
 ### 12.6. Déploiement du serveur backend
 
-- La fonction `setup_backend` installe et configure MariaDB et Firewalld sur le serveur backend. Elle crée également la base de données et les utilisateurs nécessaires pour WordPress.
+- [ ] La fonction `setup_backend` installe et configure MariaDB et Firewalld sur le serveur backend. Elle crée également la base de données et les utilisateurs nécessaires pour WordPress.
 
 ### 12.7. Déploiement du serveur frontend
 
-- La fonction `setup_frontend` installe et configure le serveur web (Apache ou Nginx), PHP, et d'autres dépendances. Elle configure également TLS avec Certbot et configure WordPress à l'aide de WP-CLI.
+- [ ] La fonction `setup_frontend` installe et configure le serveur web (Apache ou Nginx), PHP, et d'autres dépendances. Elle configure également TLS avec Certbot et configure WordPress à l'aide de WP-CLI.
 
 ### 12.8. Audit de sécurité
 
