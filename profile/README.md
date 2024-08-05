@@ -477,7 +477,7 @@ Le script Bash permetra de déployer une application WordPress sur deux serveurs
 
 ### 12.2. Génération de mots de passe forts
 
-- [x] La fonction `generate_password` utilise OpenSSL pour générer des mots de passe aléatoires et sécurisés.
+- [ ] La fonction `generate_password` utilise OpenSSL pour générer des mots de passe aléatoires et sécurisés.
 
 ### 12.3. Parsing du fichier YAML et configuration des variables d'environnement
 
