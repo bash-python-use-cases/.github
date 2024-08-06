@@ -497,11 +497,11 @@ Le script Bash permetra de déployer une application WordPress sur deux serveurs
 
 ### 12.6. Déploiement du serveur backend
 
-- [ ] La fonction `setup_backend` installe et configure MariaDB et Firewalld sur le serveur backend. Elle crée également la base de données et les utilisateurs nécessaires pour WordPress.
+- [x] La fonction `setup_backend` installe et configure MariaDB et Firewalld sur le serveur backend. Elle crée également la base de données et les utilisateurs nécessaires pour WordPress.
 
 ### 12.7. Déploiement du serveur frontend
 
-- [ ] La fonction `setup_frontend` installe et configure le serveur web (Apache ou Nginx), PHP, et d'autres dépendances. Elle configure également TLS avec Certbot et configure WordPress à l'aide de WP-CLI.
+- [x] La fonction `setup_frontend` installe et configure le serveur web (Apache ou Nginx), PHP, et d'autres dépendances. Elle configure également TLS avec Certbot et configure WordPress à l'aide de WP-CLI.
 
 ### 12.8. Audit de sécurité
 
@@ -514,4 +514,4 @@ Le script Bash permetra de déployer une application WordPress sur deux serveurs
 
 ### 12.10. Fonction principale
 
-- `main`: Gère les différentes options du script (déploiement, vérification de l'état, audit, gestion avec WP-CLI, chargement d'un fichier de configuration, affichage de l'aide).
+- [x] `main`: Gère les différentes options du script (déploiement, vérification de l'état, audit, gestion avec WP-CLI, chargement d'un fichier de configuration, affichage de l'aide).
